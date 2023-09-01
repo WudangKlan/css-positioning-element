@@ -4,6 +4,8 @@ var selectPlanButtons = document.querySelectorAll(".plan button");
 var modalNoButton = document.querySelector(".modal__action--negative");
 // console.log(backdrop)
 // console.dir(selectPlanButton)
+var toggleButton = document.querySelector(".toggle-button");
+var mobileNav = document.querySelector(".mobile-nav");
 
 for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", function () {
@@ -20,3 +22,8 @@ function closeModal() {
   modal.style.display = "none";
   backdrop.style.display = "none";
 }
+
+toggleButton.addEventListener("click", function () {
+  mobileNav.style.display = "block";
+});
+
