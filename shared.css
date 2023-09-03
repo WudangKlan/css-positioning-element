@@ -171,6 +171,9 @@
   margin: 0.6rem 0;
 }
 
+.open {
+  display: block !important;
+}
 
 .mobile-nav {
   display: none;
